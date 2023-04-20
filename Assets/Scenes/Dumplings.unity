@@ -651,6 +651,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: ThumbPointBackward
       objectReference: {fileID: 0}
+    - target: {fileID: 340923808528817225, guid: eb9f05f3e073d0a41833268a26daff05, type: 3}
+      propertyPath: _shapes.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 47629be5ccbd41b4a9cac4108e717931, type: 2}
+    - target: {fileID: 340923808528817225, guid: eb9f05f3e073d0a41833268a26daff05, type: 3}
+      propertyPath: _fingerFeatureStateProvider
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 340923808528817226, guid: eb9f05f3e073d0a41833268a26daff05, type: 3}
+      propertyPath: _transformFeatureStateProvider
+      value: 
+      objectReference: {fileID: 2140567864}
     - target: {fileID: 340923808528817227, guid: eb9f05f3e073d0a41833268a26daff05, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -698,7 +710,7 @@ PrefabInstance:
     - target: {fileID: 340923808528817229, guid: eb9f05f3e073d0a41833268a26daff05, type: 3}
       propertyPath: _hand
       value: 
-      objectReference: {fileID: 345880060}
+      objectReference: {fileID: 345880049}
     - target: {fileID: 340923808528817230, guid: eb9f05f3e073d0a41833268a26daff05, type: 3}
       propertyPath: _whenSelected.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 6
@@ -1049,7 +1061,11 @@ PrefabInstance:
     - target: {fileID: 8441970331501064567, guid: d5d8604aa9997494290223a471a23865, type: 3}
       propertyPath: _hand
       value: 
-      objectReference: {fileID: 345880056}
+      objectReference: {fileID: 345880052}
+    - target: {fileID: 8441970331501064568, guid: d5d8604aa9997494290223a471a23865, type: 3}
+      propertyPath: _transformFeatureStateProvider
+      value: 
+      objectReference: {fileID: 723139577}
     - target: {fileID: 8441970331501064569, guid: d5d8604aa9997494290223a471a23865, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1094,6 +1110,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8441970331501064571, guid: d5d8604aa9997494290223a471a23865, type: 3}
+      propertyPath: _shapes.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 1821f78d0ab50f942aff0bd487664472, type: 2}
+    - target: {fileID: 8441970331501064571, guid: d5d8604aa9997494290223a471a23865, type: 3}
+      propertyPath: _fingerFeatureStateProvider
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 8441970331501064574, guid: d5d8604aa9997494290223a471a23865, type: 3}
       propertyPath: m_Name
       value: PalmTowardsFaceFingersUp
@@ -1115,7 +1139,7 @@ PrefabInstance:
     - target: {fileID: 289756082455009529, guid: d93b7e04b48cd7b4fa849695dba2ce9c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 1d4e0a8cfca5a2745b8a3c3462ae4912, type: 2}
+      objectReference: {fileID: 2100000, guid: d641a50c4fe4ee3489a64cf52b76ae79, type: 2}
     - target: {fileID: 1245672772583743105, guid: d93b7e04b48cd7b4fa849695dba2ce9c, type: 3}
       propertyPath: _interactors.Array.size
       value: 3
@@ -1135,11 +1159,11 @@ PrefabInstance:
     - target: {fileID: 3301463142081162853, guid: d93b7e04b48cd7b4fa849695dba2ce9c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 1d4e0a8cfca5a2745b8a3c3462ae4912, type: 2}
+      objectReference: {fileID: 2100000, guid: d641a50c4fe4ee3489a64cf52b76ae79, type: 2}
     - target: {fileID: 4288970863689222858, guid: d93b7e04b48cd7b4fa849695dba2ce9c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 1d4e0a8cfca5a2745b8a3c3462ae4912, type: 2}
+      objectReference: {fileID: 2100000, guid: d641a50c4fe4ee3489a64cf52b76ae79, type: 2}
     - target: {fileID: 5507516794983821682, guid: d93b7e04b48cd7b4fa849695dba2ce9c, type: 3}
       propertyPath: _interactors.Array.size
       value: 3
@@ -1159,7 +1183,7 @@ PrefabInstance:
     - target: {fileID: 6371409879014559510, guid: d93b7e04b48cd7b4fa849695dba2ce9c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 1d4e0a8cfca5a2745b8a3c3462ae4912, type: 2}
+      objectReference: {fileID: 2100000, guid: d641a50c4fe4ee3489a64cf52b76ae79, type: 2}
     - target: {fileID: 7681372687013864540, guid: d93b7e04b48cd7b4fa849695dba2ce9c, type: 3}
       propertyPath: m_Name
       value: InteractionRigOVR-FullSynthetic
@@ -2547,6 +2571,52 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5811305860034492193, guid: 436d768f2680c9a4ab9ccc9a75288ce9, type: 3}
   m_PrefabInstance: {fileID: 694776700}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &723139576 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4559098033352713228, guid: d93b7e04b48cd7b4fa849695dba2ce9c, type: 3}
+  m_PrefabInstance: {fileID: 345880046}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &723139577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723139576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bffe606b408599b4fad696ddc889a943, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hand: {fileID: 345880052}
+  _hmd: {fileID: 1529289048}
+  _trackingToWorldTransformer: {fileID: 1366741121}
+  _disableProactiveEvaluation: 0
+--- !u!114 &723139578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723139576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b942c16a6d6a4edaad7c18c7d5762cdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hand: {fileID: 345880052}
+  _fingerStateThresholds:
+  - Finger: 0
+    StateThresholds: {fileID: 11400000, guid: 1ee82d2d63daf8b4c93040e331f8e801, type: 2}
+  - Finger: 1
+    StateThresholds: {fileID: 11400000, guid: 29b0a95ffa0254044901c8c821379040, type: 2}
+  - Finger: 2
+    StateThresholds: {fileID: 11400000, guid: 6654d266dec806d458e8c45751c96535, type: 2}
+  - Finger: 3
+    StateThresholds: {fileID: 11400000, guid: 8b470e0c4b48d474c9a42d7f661d48c7, type: 2}
+  - Finger: 4
+    StateThresholds: {fileID: 11400000, guid: 8b470e0c4b48d474c9a42d7f661d48c7, type: 2}
+  _disableProactiveEvaluation: 0
 --- !u!1001 &728195454
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3042,7 +3112,11 @@ PrefabInstance:
     - target: {fileID: 7087665247760364755, guid: 07620b6174b8db445861b03575122fe1, type: 3}
       propertyPath: _hand
       value: 
-      objectReference: {fileID: 345880048}
+      objectReference: {fileID: 345880049}
+    - target: {fileID: 7087665247760364760, guid: 07620b6174b8db445861b03575122fe1, type: 3}
+      propertyPath: _transformFeatureStateProvider
+      value: 
+      objectReference: {fileID: 2140567864}
     - target: {fileID: 7087665247760364761, guid: 07620b6174b8db445861b03575122fe1, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -3126,6 +3200,14 @@ PrefabInstance:
     - target: {fileID: 7087665247760364764, guid: 07620b6174b8db445861b03575122fe1, type: 3}
       propertyPath: _whenUnselected.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: PlayerControllerWithHandPoses, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087665247760364767, guid: 07620b6174b8db445861b03575122fe1, type: 3}
+      propertyPath: _shapes.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 47629be5ccbd41b4a9cac4108e717931, type: 2}
+    - target: {fileID: 7087665247760364767, guid: 07620b6174b8db445861b03575122fe1, type: 3}
+      propertyPath: _fingerFeatureStateProvider
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07620b6174b8db445861b03575122fe1, type: 3}
@@ -3855,6 +3937,17 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 1d5e245361b886f45bb9b9642b693bf1, type: 3}
+--- !u!114 &1366741121 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2446829748798949516, guid: d93b7e04b48cd7b4fa849695dba2ce9c, type: 3}
+  m_PrefabInstance: {fileID: 345880046}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 998a5646185efb9488265f3a2f35a99a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1372887036
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3866,6 +3959,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: ThumbPointPalmUp
       objectReference: {fileID: 0}
+    - target: {fileID: 6944208746642072837, guid: 968f0fa2948388044a46b350dd079607, type: 3}
+      propertyPath: _shapes.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 47629be5ccbd41b4a9cac4108e717931, type: 2}
+    - target: {fileID: 6944208746642072837, guid: 968f0fa2948388044a46b350dd079607, type: 3}
+      propertyPath: _fingerFeatureStateProvider
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6944208746642072838, guid: 968f0fa2948388044a46b350dd079607, type: 3}
+      propertyPath: _transformFeatureStateProvider
+      value: 
+      objectReference: {fileID: 2140567864}
     - target: {fileID: 6944208746642072839, guid: 968f0fa2948388044a46b350dd079607, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -5638,7 +5743,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5868880527484745621, guid: c368f46a01d97a8408e9b7d22c5f7ebf, type: 3}
       propertyPath: _whenSelected.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5868880527484745621, guid: c368f46a01d97a8408e9b7d22c5f7ebf, type: 3}
       propertyPath: _whenSelected.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -5708,6 +5813,18 @@ PrefabInstance:
       propertyPath: _whenSelected.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5868880527484745704, guid: c368f46a01d97a8408e9b7d22c5f7ebf, type: 3}
+      propertyPath: _shapes.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: b1f17f333039b064b96576b1ba8477ad, type: 2}
+    - target: {fileID: 5868880527484745704, guid: c368f46a01d97a8408e9b7d22c5f7ebf, type: 3}
+      propertyPath: _fingerFeatureStateProvider
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5868880527484745705, guid: c368f46a01d97a8408e9b7d22c5f7ebf, type: 3}
+      propertyPath: _transformFeatureStateProvider
+      value: 
+      objectReference: {fileID: 2140567864}
     - target: {fileID: 5868880527484745708, guid: c368f46a01d97a8408e9b7d22c5f7ebf, type: 3}
       propertyPath: m_Name
       value: IndexPointForward
@@ -5715,7 +5832,7 @@ PrefabInstance:
     - target: {fileID: 5868880527484745710, guid: c368f46a01d97a8408e9b7d22c5f7ebf, type: 3}
       propertyPath: _hand
       value: 
-      objectReference: {fileID: 345880055}
+      objectReference: {fileID: 345880049}
     - target: {fileID: 5868880527484745711, guid: c368f46a01d97a8408e9b7d22c5f7ebf, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -6386,6 +6503,52 @@ Transform:
   m_Father: {fileID: 1568861818}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2140567863 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1534063489508958937, guid: d93b7e04b48cd7b4fa849695dba2ce9c, type: 3}
+  m_PrefabInstance: {fileID: 345880046}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2140567864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140567863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bffe606b408599b4fad696ddc889a943, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hand: {fileID: 345880049}
+  _hmd: {fileID: 1529289048}
+  _trackingToWorldTransformer: {fileID: 1366741121}
+  _disableProactiveEvaluation: 0
+--- !u!114 &2140567865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140567863}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b942c16a6d6a4edaad7c18c7d5762cdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hand: {fileID: 345880049}
+  _fingerStateThresholds:
+  - Finger: 0
+    StateThresholds: {fileID: 11400000, guid: 1ee82d2d63daf8b4c93040e331f8e801, type: 2}
+  - Finger: 1
+    StateThresholds: {fileID: 11400000, guid: 29b0a95ffa0254044901c8c821379040, type: 2}
+  - Finger: 2
+    StateThresholds: {fileID: 11400000, guid: 6654d266dec806d458e8c45751c96535, type: 2}
+  - Finger: 3
+    StateThresholds: {fileID: 11400000, guid: 8b470e0c4b48d474c9a42d7f661d48c7, type: 2}
+  - Finger: 4
+    StateThresholds: {fileID: 11400000, guid: 8b470e0c4b48d474c9a42d7f661d48c7, type: 2}
+  _disableProactiveEvaluation: 0
 --- !u!114 &71988361455104490
 MonoBehaviour:
   m_ObjectHideFlags: 0
