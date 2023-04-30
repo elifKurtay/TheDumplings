@@ -757,13 +757,25 @@ PrefabInstance:
       value: ThumbPointBackward
       objectReference: {fileID: 0}
     - target: {fileID: 340923808528817225, guid: eb9f05f3e073d0a41833268a26daff05, type: 3}
+      propertyPath: _shapes.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 340923808528817225, guid: eb9f05f3e073d0a41833268a26daff05, type: 3}
       propertyPath: _shapes.Array.data[0]
       value: 
       objectReference: {fileID: 11400000, guid: 47629be5ccbd41b4a9cac4108e717931, type: 2}
     - target: {fileID: 340923808528817225, guid: eb9f05f3e073d0a41833268a26daff05, type: 3}
-      propertyPath: _fingerFeatureStateProvider
+      propertyPath: _shapes.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 55734ff6ac9c48443ab37831fdd69d7b, type: 2}
+    - target: {fileID: 340923808528817225, guid: eb9f05f3e073d0a41833268a26daff05, type: 3}
+      propertyPath: _shapes.Array.data[2]
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 340923808528817225, guid: eb9f05f3e073d0a41833268a26daff05, type: 3}
+      propertyPath: _fingerFeatureStateProvider
+      value: 
+      objectReference: {fileID: 2140567865}
     - target: {fileID: 340923808528817226, guid: eb9f05f3e073d0a41833268a26daff05, type: 3}
       propertyPath: _transformFeatureStateProvider
       value: 
@@ -1441,7 +1453,7 @@ PrefabInstance:
     - target: {fileID: 8441970331501064571, guid: d5d8604aa9997494290223a471a23865, type: 3}
       propertyPath: _fingerFeatureStateProvider
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 723139578}
     - target: {fileID: 8441970331501064574, guid: d5d8604aa9997494290223a471a23865, type: 3}
       propertyPath: m_Name
       value: PalmTowardsFaceFingersUp
@@ -1460,6 +1472,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 171151169080815115, guid: d93b7e04b48cd7b4fa849695dba2ce9c, type: 3}
+      propertyPath: _enablePhysicsCapsules
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 289756082455009529, guid: d93b7e04b48cd7b4fa849695dba2ce9c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -1484,6 +1500,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: d641a50c4fe4ee3489a64cf52b76ae79, type: 2}
+    - target: {fileID: 4043101139244153779, guid: d93b7e04b48cd7b4fa849695dba2ce9c, type: 3}
+      propertyPath: _enablePhysicsCapsules
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4288970863689222858, guid: d93b7e04b48cd7b4fa849695dba2ce9c, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -3016,7 +3036,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5811305860034492193, guid: 436d768f2680c9a4ab9ccc9a75288ce9, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5811305860034492195, guid: 436d768f2680c9a4ab9ccc9a75288ce9, type: 3}
       propertyPath: m_RootOrder
@@ -3062,20 +3082,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 4602191623373949486, guid: 436d768f2680c9a4ab9ccc9a75288ce9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 436d768f2680c9a4ab9ccc9a75288ce9, type: 3}
 --- !u!1 &694776701 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5811305860034492193, guid: 436d768f2680c9a4ab9ccc9a75288ce9, type: 3}
   m_PrefabInstance: {fileID: 694776700}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &723139576 stripped
+--- !u!1 &694776702 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 4559098033352713228, guid: d93b7e04b48cd7b4fa849695dba2ce9c, type: 3}
-  m_PrefabInstance: {fileID: 345880046}
+  m_CorrespondingSourceObject: {fileID: 6652591000289969978, guid: 436d768f2680c9a4ab9ccc9a75288ce9, type: 3}
+  m_PrefabInstance: {fileID: 694776700}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &723139577
+--- !u!114 &694776703
 MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694776702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f1c05e246f22904dacc379a267083b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _transferOnSecondSelection: 0
+  _addNewPointsToFront: 0
+  _forwardElement: {fileID: 0}
 --- !u!1001 &709122664
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3162,13 +3196,27 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8231724738468569665, guid: b48178a9d56ed1f4ab29676f35def8e1, type: 3}
   m_PrefabInstance: {fileID: 709122664}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &709122666 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8231724738468216417, guid: b48178a9d56ed1f4ab29676f35def8e1, type: 3}
-  m_PrefabInstance: {fileID: 709122664}
-  m_PrefabAsset: {fileID: 0}
 --- !u!64 &709122667
 MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 723139576}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
+--- !u!1 &723139576 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4559098033352713228, guid: d93b7e04b48cd7b4fa849695dba2ce9c, type: 3}
+  m_PrefabInstance: {fileID: 345880046}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &723139577
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -3208,14 +3256,6 @@ MonoBehaviour:
   - Finger: 4
     StateThresholds: {fileID: 11400000, guid: 8b470e0c4b48d474c9a42d7f661d48c7, type: 2}
   _disableProactiveEvaluation: 0
-  m_GameObject: {fileID: 709122666}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 1d5e245361b886f45bb9b9642b693bf1, type: 3}
 --- !u!1001 &728195454
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4011,13 +4051,21 @@ PrefabInstance:
       value: PlayerControllerWithHandPoses, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7087665247760364767, guid: 07620b6174b8db445861b03575122fe1, type: 3}
+      propertyPath: _shapes.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7087665247760364767, guid: 07620b6174b8db445861b03575122fe1, type: 3}
       propertyPath: _shapes.Array.data[0]
       value: 
       objectReference: {fileID: 11400000, guid: 47629be5ccbd41b4a9cac4108e717931, type: 2}
     - target: {fileID: 7087665247760364767, guid: 07620b6174b8db445861b03575122fe1, type: 3}
+      propertyPath: _shapes.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 55734ff6ac9c48443ab37831fdd69d7b, type: 2}
+    - target: {fileID: 7087665247760364767, guid: 07620b6174b8db445861b03575122fe1, type: 3}
       propertyPath: _fingerFeatureStateProvider
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2140567865}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 07620b6174b8db445861b03575122fe1, type: 3}
 --- !u!4 &939010285 stripped
@@ -5399,13 +5447,21 @@ PrefabInstance:
       value: ThumbPointPalmUp
       objectReference: {fileID: 0}
     - target: {fileID: 6944208746642072837, guid: 968f0fa2948388044a46b350dd079607, type: 3}
+      propertyPath: _shapes.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6944208746642072837, guid: 968f0fa2948388044a46b350dd079607, type: 3}
       propertyPath: _shapes.Array.data[0]
       value: 
       objectReference: {fileID: 11400000, guid: 47629be5ccbd41b4a9cac4108e717931, type: 2}
     - target: {fileID: 6944208746642072837, guid: 968f0fa2948388044a46b350dd079607, type: 3}
+      propertyPath: _shapes.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 55734ff6ac9c48443ab37831fdd69d7b, type: 2}
+    - target: {fileID: 6944208746642072837, guid: 968f0fa2948388044a46b350dd079607, type: 3}
       propertyPath: _fingerFeatureStateProvider
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2140567865}
     - target: {fileID: 6944208746642072838, guid: 968f0fa2948388044a46b350dd079607, type: 3}
       propertyPath: _transformFeatureStateProvider
       value: 
@@ -7394,13 +7450,25 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5868880527484745704, guid: c368f46a01d97a8408e9b7d22c5f7ebf, type: 3}
+      propertyPath: _shapes.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5868880527484745704, guid: c368f46a01d97a8408e9b7d22c5f7ebf, type: 3}
       propertyPath: _shapes.Array.data[0]
       value: 
       objectReference: {fileID: 11400000, guid: b1f17f333039b064b96576b1ba8477ad, type: 2}
     - target: {fileID: 5868880527484745704, guid: c368f46a01d97a8408e9b7d22c5f7ebf, type: 3}
-      propertyPath: _fingerFeatureStateProvider
+      propertyPath: _shapes.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: f4bd1264636288c4c8322cdb04ae93b2, type: 2}
+    - target: {fileID: 5868880527484745704, guid: c368f46a01d97a8408e9b7d22c5f7ebf, type: 3}
+      propertyPath: _shapes.Array.data[2]
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5868880527484745704, guid: c368f46a01d97a8408e9b7d22c5f7ebf, type: 3}
+      propertyPath: _fingerFeatureStateProvider
+      value: 
+      objectReference: {fileID: 2140567865}
     - target: {fileID: 5868880527484745705, guid: c368f46a01d97a8408e9b7d22c5f7ebf, type: 3}
       propertyPath: _transformFeatureStateProvider
       value: 
