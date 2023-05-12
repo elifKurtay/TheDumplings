@@ -6,6 +6,7 @@ public class CollisionDetection : MonoBehaviour
 {
     public GameObject light;
     public Material green;
+    public Logger debug;
 
     private AudioSource audioSource;
     private Material red;
@@ -25,7 +26,7 @@ public class CollisionDetection : MonoBehaviour
 
     private void OnTriggerEnter(Collider someObject) {
         if(someObject.CompareTag("Basketball")) {
-            Debug.Log("GOAL!");
+            debug.LogInfo("GOAL!");
             audioSource.PlayOneShot(audioSource.clip);
             light.GetComponent<MeshRenderer>().material = green;
             StartCoroutine(Wait3Sec());
