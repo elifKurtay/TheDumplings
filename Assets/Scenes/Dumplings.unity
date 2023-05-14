@@ -2079,7 +2079,7 @@ MonoBehaviour:
   JumpForce: 0.3
   RotationAmount: 0.35
   RotationRatchet: 45
-  SnapRotation: 0
+  SnapRotation: 1
   RotateAroundGuardianCenter: 0
   FixedSpeedSteps: 0
   HmdResetsY: 0
@@ -7248,7 +7248,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0.99999994, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.040000048, y: 0.34042114, z: 0.00000032782555}
+  m_ConnectedAnchor: {x: 0.040000048, y: 0.21276069, z: 0.00000032782555}
   serializedVersion: 2
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
