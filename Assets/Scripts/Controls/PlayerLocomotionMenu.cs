@@ -12,6 +12,9 @@ public class PlayerLocomotionMenu : MonoBehaviour
     [SerializeField]
     private InteractableUnityEventWrapper onLocomotionAction;
 
+    [SerializeField]
+    private Logger logger;
+
     private PlayerControllerWithHandPoses playerControllerWithHandPoses;
 
     private bool locomotionOn = true;
@@ -19,7 +22,6 @@ public class PlayerLocomotionMenu : MonoBehaviour
     private void Awake()
     {
         playerControllerWithHandPoses = GetComponent<PlayerControllerWithHandPoses>();
-        Debug.Log("Locomotion menu is active");
     }
 
     public void LocomotionVisibility(bool state)
@@ -40,7 +42,7 @@ public class PlayerLocomotionMenu : MonoBehaviour
         locomotionMenuOption.text = $"LOCOMOTION {locomotionMenuState}";
         playerControllerWithHandPoses.EnableLinearMovement = locomotionOn;
 
-        Debug.Log($"Locomotion state changed to: {locomotionMenuState}");
+        logger.LogInfo($"Locomotion state changed to: {locomotionMenuState}");
     }
 
 }
