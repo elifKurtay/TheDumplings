@@ -9524,9 +9524,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawners:
-  - {fileID: 1044651129}
-  - {fileID: 1302264449}
-  - {fileID: 142624181}
+  - {fileID: 1044651130}
+  - {fileID: 1302264450}
+  - {fileID: 142624182}
   candies:
   - {fileID: 100000, guid: f324825313609405c900d502e8d563f2, type: 3}
   - {fileID: 100004, guid: 89eed1a92c83c45c488171c7057b5c6f, type: 3}
