@@ -19,7 +19,8 @@ public class PieceScript : MonoBehaviour
     {
         rightPosition = transform.position;
         rightRotation = transform.rotation;
-        transform.position = new Vector3(Random.Range(-2.5f, 2.5f), 0.05f, Random.Range(0f, 1f));
+        transform.position = rightPosition + new Vector3(Random.Range(-1.5f,0f), 0.05f, Random.Range(-1.5f, 1.5f));
+        //print(transform.position);
         rigidBody = GetComponent<Rigidbody>();
         audioData = GetComponent<AudioSource>();
         grab = GetComponent<Grabbable>();
