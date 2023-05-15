@@ -5,14 +5,15 @@ TagManager:
   serializedVersion: 2
   tags:
   - Basketball
+  - Puzzle
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - DoorHandle
   - Water
   - UI
-  - 
+  - Hands
   - 
   - 
   - 
