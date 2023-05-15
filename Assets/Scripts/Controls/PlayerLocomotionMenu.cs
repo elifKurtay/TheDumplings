@@ -6,43 +6,49 @@ using UnityEngine;
 public class PlayerLocomotionMenu : MonoBehaviour
 {
     [SerializeField]
+    private OVRCameraRig cameraRig;
+
+    [SerializeField]
+    private GameObject targetHand;
+
+    [SerializeField]
     private GameObject locomotionMenu;
+
+    [SerializeField]
+    private Vector3 offsetFromHand = new Vector3(0.5f, 0.5f, 0.5f);
+
+    private PlayerControllerWithHandPoses playerControllerWithHandPoses;
 
     // menuState
     [SerializeField]
     private InteractableUnityEventWrapper onLocomotionAction;
-
-    [SerializeField]
-    private Logger logger;
-
-    private PlayerControllerWithHandPoses playerControllerWithHandPoses;
-
     private bool locomotionOn = true;
 
     private void Awake()
     {
         playerControllerWithHandPoses = GetComponent<PlayerControllerWithHandPoses>();
+        Debug.Log("Locomotion menu is active");
+        onLocomotionAction.WhenSelect.AddListener(() =>
+        {
+            //locomotionOn = !locomotionOn;
+            var locomotionMenuOption = onLocomotionAction.GetComponentInChildren<TextMeshPro>();
+            var locomotionMenuState = locomotionOn ? "ON" : "OFF";
+            locomotionMenuOption.text = $"LOCOMOTION {locomotionMenuState}";
+            playerControllerWithHandPoses.EnableLinearMovement = locomotionOn;
+
+            Debug.Log($"Locomotion state changed to: {locomotionMenuState}");
+        });
     }
 
     public void LocomotionVisibility(bool state)
     {
-        locomotionMenu.SetActive(state);
+        locomotionMenu.SetActive(true);
     }
 
     private void Update()
     {
-        //locomotionMenu.transform.position = targetHand.transform.position + offsetFromHand;
-        //locomotionMenu.transform.rotation = Quaternion.LookRotation(locomotionMenu.transform.position - cameraRig.centerEyeAnchor.transform.position, Vector3.up);
-    }
-
-    public void ToggleLocomotion() {
-        locomotionOn = !locomotionOn;
-        var locomotionMenuOption = onLocomotionAction.GetComponentInChildren<TextMeshPro>();
-        var locomotionMenuState = locomotionOn ? "ON" : "OFF";
-        locomotionMenuOption.text = $"LOCOMOTION {locomotionMenuState}";
-        playerControllerWithHandPoses.EnableLinearMovement = locomotionOn;
-
-        logger.LogInfo($"Locomotion state changed to: {locomotionMenuState}");
+        locomotionMenu.transform.position = targetHand.transform.position + offsetFromHand;
+        locomotionMenu.transform.rotation = Quaternion.LookRotation(locomotionMenu.transform.position - cameraRig.centerEyeAnchor.transform.position, Vector3.up);
     }
 
 }
