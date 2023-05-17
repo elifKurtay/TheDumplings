@@ -35,10 +35,6 @@ public class CollisionDetection : MonoBehaviour
 
     IEnumerator Wait3Sec()
     {
-        //Print the time of when the function is first called.
-        //Debug.Log("Started Coroutine at timestamp : " + Time.time);
-
-        //yield on a new YieldInstruction that waits for 5 seconds.
         yield return new WaitForSeconds(3);
         light.GetComponent<MeshRenderer>().material = red;
         //After we have waited 5 seconds print the time again.
