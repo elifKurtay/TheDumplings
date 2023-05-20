@@ -7,6 +7,7 @@ public class DisableDoor : MonoBehaviour
 {
     public GameObject door;
     public GameObject handler;
+    public GameHandler gameHandler;
     // public Collider trigger;
 
     private Vector3 initialPosition;
@@ -35,6 +36,9 @@ public class DisableDoor : MonoBehaviour
         if (disabled) return;
 
         ResetAndDisableDoor();
+        if(gameHandler != null) {
+            gameHandler.NextLevel();
+        }
         disabled = true;
     }
 
