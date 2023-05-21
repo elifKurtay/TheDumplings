@@ -134,8 +134,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hand: {fileID: 340923808528817229}
+  _fingerFeatureStateProvider: {fileID: 0}
   _shapes:
-  - {fileID: 11400000, guid: 47629be5ccbd41b4a9cac4108e717931, type: 2}
+  - {fileID: 0}
 --- !u!114 &340923808528817226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,6 +150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _hand: {fileID: 340923808528817229}
+  _transformFeatureStateProvider: {fileID: 0}
   _transformFeatureConfigs:
     _values:
     - _mode: 0
