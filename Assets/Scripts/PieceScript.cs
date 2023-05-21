@@ -8,7 +8,7 @@ public class PieceScript : MonoBehaviour
     private Quaternion rightRotation;
     private AudioSource audioData;
 
-    private bool foundRightPosition;
+    public bool foundRightPosition = false;
 
     private Rigidbody rigidBody;
     private Grabbable grab;

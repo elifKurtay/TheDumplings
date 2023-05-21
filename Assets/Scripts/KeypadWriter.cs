@@ -6,6 +6,8 @@ using TMPro;
 public class KeypadWriter : MonoBehaviour
 {
     [SerializeField] public Logger debug;
+    public DisableDoor doorToEnable;
+
     private TextMeshPro textArea;
     private int maxLen = 6;
     private string password = "863923";
@@ -39,11 +41,16 @@ public class KeypadWriter : MonoBehaviour
     {
         if (textArea.text == password)
         {
-            debug.LogInfo("Success!!!");
+            if(debug != null) {
+                debug.LogInfo("Success!!!");
+            }
+            doorToEnable.Enable();
         }
         else
         {
-            debug.LogInfo("FAIL!!!");
+            if(debug != null) {
+                debug.LogInfo("FAIL!!!");
+            }
         }
     }
 }

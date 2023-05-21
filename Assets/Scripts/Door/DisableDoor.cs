@@ -6,13 +6,16 @@ using UnityEngine;
 public class DisableDoor : MonoBehaviour
 {
     public GameObject door;
-    public DisableDoor otherDoor;
     public GameObject handler;
     public GameHandler gameHandler;
-    // public Collider trigger;
+
+    public GameObject lamb;
+    public Material green;
 
     private Vector3 initialPosition;
     private Quaternion initialRotation;
+    private Rigidbody rb;
+    private Material red;
 
     // whether the door is disabled
     private bool disabled;
@@ -23,12 +26,8 @@ public class DisableDoor : MonoBehaviour
         Transform t = door.GetComponent<Transform>();
         initialPosition = t.position;
         initialRotation = t.rotation;
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        red = lamb.GetComponent<MeshRenderer>().material;
     }
 
     // when the player enters the trigger
@@ -38,27 +37,27 @@ public class DisableDoor : MonoBehaviour
         if (someObject.gameObject.layer == 8)
         {
             Disable();
-            if(gameHandler != null) {
-                gameHandler.NextLevel();
-            }
         }
     }
 
     private void Disable() {
         // disable rigidbody
-        Rigidbody rb = door.GetComponent<Rigidbody>();
         rb.isKinematic = true;
 
         door.transform.position = initialPosition;
         door.transform.rotation = initialRotation;
         // disable grabbable handler
         handler.SetActive(false);
-        otherDoor.Enable();
         disabled = true;
+
+        //red light on
+        lamb.GetComponent<MeshRenderer>().material = green;
+        if(gameHandler != null) {
+            gameHandler.NextLevel();
+        }
     }
     
     public void Enable() {
-        Rigidbody rb = door.GetComponent<Rigidbody>();
         rb.isKinematic = false;
         rb.velocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
@@ -69,6 +68,9 @@ public class DisableDoor : MonoBehaviour
         // disable grabbable handler
         handler.SetActive(true);
         disabled = false;
+
+        // green light on
+        lamb.GetComponent<MeshRenderer>().material = green;
     }
 
 }
