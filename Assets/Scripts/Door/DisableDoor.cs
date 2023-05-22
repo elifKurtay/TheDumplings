@@ -28,6 +28,7 @@ public class DisableDoor : MonoBehaviour
         initialRotation = t.rotation;
 
         red = lamb.GetComponent<MeshRenderer>().material;
+        lamb.GetComponent<MeshRenderer>().material = green;
     }
 
     // when the player enters the trigger
@@ -51,7 +52,7 @@ public class DisableDoor : MonoBehaviour
         disabled = true;
 
         //red light on
-        lamb.GetComponent<MeshRenderer>().material = green;
+        lamb.GetComponent<MeshRenderer>().material = red;
         if(gameHandler != null) {
             gameHandler.NextLevel();
         }
