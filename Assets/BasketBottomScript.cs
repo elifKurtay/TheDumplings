@@ -4,11 +4,6 @@ using UnityEngine;
 
 public class BasketBottomScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     private void OnTriggerEnter(Collider someObject)
     {
@@ -26,11 +21,5 @@ public class BasketBottomScript : MonoBehaviour
             Rigidbody body = someObject.gameObject.transform.GetComponent<Rigidbody>();
             body.constraints = RigidbodyConstraints.None;
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

@@ -6,6 +6,7 @@ using TMPro;
 public class CandyCounter : MonoBehaviour
 {
     public DisableDoor doorToEnable;
+    public BasketCollisionScript basketCount;
 
     private TextMeshPro textArea;
     public int goalCount = 10;
@@ -23,11 +24,7 @@ public class CandyCounter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    public void inc() {
-        candyCount++;
+        candyCount = basketCount.numberOfCandies;
         textArea.text = candyCount.ToString();
         if(candyCount == goalCount) {
             doorToEnable.Enable();

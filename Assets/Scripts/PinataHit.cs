@@ -5,7 +5,7 @@ using UnityEngine;
 public class PinataHit : MonoBehaviour
 {
     [SerializeField] CandySpawner spawner;
-    [SerializeField] Logger debug;
+    
     private AudioSource audioSource;
     private Rigidbody rb;
 
