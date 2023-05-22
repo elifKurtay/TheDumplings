@@ -6,13 +6,11 @@ public class JigsawProgress : MonoBehaviour
 {
     
     public DisableDoor doorToEnable;
-    private bool isFinished;
     private PieceScript[] allChildren;
 
     // Start is called before the first frame update
     void Start()
     {
-        isFinished = false;
         allChildren = GetComponentsInChildren<PieceScript>();
     }
 

@@ -12,6 +12,8 @@ public class DisableDoor : MonoBehaviour
     public GameObject lamb;
     public Material green;
 
+    public bool isTutorialDoor;
+
     private Vector3 initialPosition;
     private Quaternion initialRotation;
     private Rigidbody rb;
@@ -23,12 +25,16 @@ public class DisableDoor : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        disabled = false;
         Transform t = door.GetComponent<Transform>();
+        rb = door.GetComponent<Rigidbody>();
         initialPosition = t.position;
         initialRotation = t.rotation;
 
         red = lamb.GetComponent<MeshRenderer>().material;
-        lamb.GetComponent<MeshRenderer>().material = green;
+        if(isTutorialDoor) {
+            lamb.GetComponent<MeshRenderer>().material = green;
+        }
     }
 
     // when the player enters the trigger

@@ -397,15 +397,15 @@ public class PlayerControllerWithHandPoses : MonoBehaviour
 			ort = Quaternion.Euler(ortEuler);
 
 			if (moveForward)
-				MoveThrottle += ort * (transform.lossyScale.z * moveInfluence * Vector3.forward);
+				MoveThrottle += ort * (transform.lossyScale.z * moveInfluence * (Vector3.forward + Vector3.right));
 			if (moveBack)
 				MoveThrottle += ort * (transform.lossyScale.z * moveInfluence * BackAndSideDampen * Vector3.back);
-			/*
+			
 			if (moveLeft)
 				MoveThrottle += ort * (transform.lossyScale.x * moveInfluence * BackAndSideDampen * Vector3.left);
 			if (moveRight)
 				MoveThrottle += ort * (transform.lossyScale.x * moveInfluence * BackAndSideDampen * Vector3.right);
-*/
+
 
 
 			moveInfluence = Acceleration * 0.1f * MoveScale * MoveScaleMultiplier;

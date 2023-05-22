@@ -11,7 +11,7 @@ public class Follow : MonoBehaviour
     private Rigidbody targetRb;
     private Transform targetTransform;
     private float velocityThreshold = 1.0f;
-    private float followTime = 2.0f;
+    //private float followTime = 2.0f;
     private bool follow = true;
 
     // Start is called before the first frame update
