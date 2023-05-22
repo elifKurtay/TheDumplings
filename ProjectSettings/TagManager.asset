@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Basketball
   - Puzzle
+  - Candy
   layers:
   - Default
   - TransparentFX
