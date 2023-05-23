@@ -7171,7 +7171,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 55924b6ca35427847b18702a07ec7336, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 56b32a5048928dc4089f7ebbfc2a3f56, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.7
   m_Pitch: 1
@@ -15569,6 +15569,10 @@ PrefabInstance:
       propertyPath: _twoGrabTransformer
       value: 
       objectReference: {fileID: 1714629416}
+    - target: {fileID: 2966540770245401231, guid: 244373c0583ec814fb00ea6f1633d3c0, type: 3}
+      propertyPath: _usesHandPose
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3992007886301730701, guid: 244373c0583ec814fb00ea6f1633d3c0, type: 3}
       propertyPath: m_Radius
       value: 0.13
@@ -15632,6 +15636,10 @@ PrefabInstance:
     - target: {fileID: 4958904778147753687, guid: 244373c0583ec814fb00ea6f1633d3c0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5265350591836477447, guid: 244373c0583ec814fb00ea6f1633d3c0, type: 3}
+      propertyPath: m_Name
+      value: HandGrabInteractable_right
       objectReference: {fileID: 0}
     - target: {fileID: 5735968766111233133, guid: 244373c0583ec814fb00ea6f1633d3c0, type: 3}
       propertyPath: m_Name

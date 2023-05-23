@@ -31,11 +31,13 @@ public class PieceScript : MonoBehaviour
     void Update()
     {
         
-        if (foundRightPosition && transform.hasChanged)
+        if (foundRightPosition)
         {
-            transform.position = rightPosition;
-            transform.rotation = rightRotation;
-            transform.hasChanged = false;
+            if( transform.hasChanged) {
+                transform.position = rightPosition;
+                transform.rotation = rightRotation;
+                transform.hasChanged = false;
+            }
             return;
         }
 

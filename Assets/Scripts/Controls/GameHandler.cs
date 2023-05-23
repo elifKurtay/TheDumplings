@@ -39,11 +39,11 @@ public class GameHandler : MonoBehaviour
     void Update()
     {
         if(updated) {
-            if(gameLevel == 4) {
+            if(gameLevel == 3) {
                 updated = false;
                 return;
             }
-            else if (gameLevel > 4) {
+            else if (gameLevel > 3) {
                 endingScene.SetActive(true);
                 room2.SetActive(false);
                 updated = false;
