@@ -10,7 +10,7 @@ public class KeypadWriter : MonoBehaviour
 
     private TextMeshPro textArea;
     private int maxLen = 6;
-    private string password = "863923";
+    private string password = "862339";
 
     // Start is called before the first frame update
     void Start()

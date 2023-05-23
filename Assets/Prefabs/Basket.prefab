@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7023165880172056750}
   - component: {fileID: 5105169301166638673}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HandGrabInteractable_left (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51,7 +51,7 @@ MonoBehaviour:
   _pointableElement: {fileID: 6237314981446482965}
   _rigidbody: {fileID: 6237314981446482962}
   _physicsGrabbable: {fileID: 0}
-  _resetGrabOnGrabsUpdated: 0
+  _resetGrabOnGrabsUpdated: 1
   _scoringModifier:
     _positionRotationWeight: 0.8
   _supportedGrabTypes: 2
@@ -83,7 +83,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7615487961252751423}
   - component: {fileID: 3401987761633025988}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HandGrabInteractable_left (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +124,7 @@ MonoBehaviour:
   _pointableElement: {fileID: 6237314981446482965}
   _rigidbody: {fileID: 6237314981446482962}
   _physicsGrabbable: {fileID: 0}
-  _resetGrabOnGrabsUpdated: 0
+  _resetGrabOnGrabsUpdated: 1
   _scoringModifier:
     _positionRotationWeight: 0.8
   _supportedGrabTypes: 2
@@ -157,7 +157,7 @@ GameObject:
   - component: {fileID: 140322448179538121}
   - component: {fileID: 1996341646099555269}
   - component: {fileID: 7322726319676516474}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HandGrab Point (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -244,7 +244,7 @@ GameObject:
   - component: {fileID: 1536913109519871109}
   - component: {fileID: 8524185859779265993}
   - component: {fileID: 8432625387496163095}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HandGrab Point (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -333,7 +333,7 @@ GameObject:
   - component: {fileID: 6739345637861407924}
   - component: {fileID: 6500176598448984165}
   - component: {fileID: 4023942185843348705}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -348,7 +348,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1517225634103650665}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.002, y: 0.12, z: -0.001}
+  m_LocalPosition: {x: -0.002, y: 0.129, z: -0.001}
   m_LocalScale: {x: 0.78919894, y: 0.1, z: 0.73112583}
   m_Children: []
   m_Father: {fileID: 6233418038388330666}
@@ -442,7 +442,7 @@ GameObject:
   - component: {fileID: 6828621474551806349}
   - component: {fileID: 8554018113279782417}
   - component: {fileID: 4735033324363378296}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -633,7 +633,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bfa32e6f0a8ab64692bded21053d02d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  debug: {fileID: 0}
   numberOfCandies: 0
 --- !u!1 &3499771520999345200
 GameObject:
@@ -646,7 +645,7 @@ GameObject:
   - component: {fileID: 7425849754177971569}
   - component: {fileID: 6249740646798656256}
   - component: {fileID: 7261334617426315186}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HandGrab Point (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -732,7 +731,7 @@ GameObject:
   m_Component:
   - component: {fileID: 884042644364751023}
   - component: {fileID: 759215123954649083}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HandGrabInteractable_left (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -773,7 +772,7 @@ MonoBehaviour:
   _pointableElement: {fileID: 6237314981446482965}
   _rigidbody: {fileID: 6237314981446482962}
   _physicsGrabbable: {fileID: 0}
-  _resetGrabOnGrabsUpdated: 0
+  _resetGrabOnGrabsUpdated: 1
   _scoringModifier:
     _positionRotationWeight: 0.8
   _supportedGrabTypes: 2
@@ -814,9 +813,9 @@ GameObject:
   - component: {fileID: 6237314981446482962}
   - component: {fileID: 6237314981446482965}
   - component: {fileID: 6237314981446482967}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Basket
-  m_TagString: Untagged
+  m_TagString: Basket
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -828,9 +827,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6236567645885049834}
-  m_LocalRotation: {x: 0.000000021855694, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.786, y: -0.45, z: -1.65}
-  m_LocalScale: {x: 0.32891235, y: 0.3, z: 0.2709}
+  m_LocalScale: {x: 0.70000005, y: 7.0070066, z: 0.70000005}
   m_Children:
   - {fileID: 1932672796576698313}
   - {fileID: 7615487961252751423}
@@ -1012,7 +1011,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2178203513979969930}
   - component: {fileID: 1225221288757555918}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HandGrabInteractable_left (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1053,7 +1052,7 @@ MonoBehaviour:
   _pointableElement: {fileID: 6237314981446482965}
   _rigidbody: {fileID: 6237314981446482962}
   _physicsGrabbable: {fileID: 0}
-  _resetGrabOnGrabsUpdated: 0
+  _resetGrabOnGrabsUpdated: 1
   _scoringModifier:
     _positionRotationWeight: 0.8
   _supportedGrabTypes: 2
@@ -1086,7 +1085,7 @@ GameObject:
   - component: {fileID: 1639278511624511464}
   - component: {fileID: 7274205867666683353}
   - component: {fileID: 5675322884020626845}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HandGrab Point (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
