@@ -24,12 +24,11 @@ public class DisableDoor : MonoBehaviour
     private Material red;
 
     // whether the door is disabled
-    private bool disabled;
+    private bool disabled = true;
 
     // Start is called before the first frame update
     void Start()
     {
-        disabled = true;
         Transform t = door.GetComponent<Transform>();
         doorRb = door.GetComponent<Rigidbody>();
         doorInitPos = t.position;
@@ -37,9 +36,12 @@ public class DisableDoor : MonoBehaviour
         handleInitPos = grabbableHandle.GetComponent<Transform>().position;
 
         red = lamb.GetComponent<MeshRenderer>().material;
+
+        // disable door by default
+        // Disable();
+
         if(isTutorialDoor) {
             Enable();
-            
             // DEBUG ONLY
             // StartCoroutine(waiter());
         }
@@ -58,7 +60,13 @@ public class DisableDoor : MonoBehaviour
     private void OnTriggerExit(Collider someObject) {
         if (someObject.gameObject.layer == 8)
         {
+            // disable door
             Disable();
+
+            // load next level
+            if(gameHandler != null) {
+                gameHandler.NextLevel();
+            }
         }
     }
 
@@ -74,13 +82,9 @@ public class DisableDoor : MonoBehaviour
         // disable grabbable handler
         grabbableHandle.SetActive(false);
         
-        // door.SetActive(true);
-
         //red light on
         lamb.GetComponent<MeshRenderer>().material = red;
-        if(gameHandler != null) {
-            gameHandler.NextLevel();
-        }
+       
         disabled = true;
     }
     
@@ -88,7 +92,7 @@ public class DisableDoor : MonoBehaviour
         // already enabled
         if (!disabled) return;
 
-        ResetDoorPosition();
+        // ResetDoorPosition();
 
         // enable grabbable handler
         grabbableHandle.SetActive(true);
