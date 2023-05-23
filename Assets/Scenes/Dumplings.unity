@@ -16406,11 +16406,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3662471582866371200, guid: 244373c0583ec814fb00ea6f1633d3c0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.144
+      value: 0.157
       objectReference: {fileID: 0}
     - target: {fileID: 3662471582866371200, guid: 244373c0583ec814fb00ea6f1633d3c0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.003
+      value: 0.004
       objectReference: {fileID: 0}
     - target: {fileID: 3662471582866371200, guid: 244373c0583ec814fb00ea6f1633d3c0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -16454,7 +16454,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4340822538270362361, guid: 244373c0583ec814fb00ea6f1633d3c0, type: 3}
       propertyPath: _resetGrabOnGrabsUpdated
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4340822538270362361, guid: 244373c0583ec814fb00ea6f1633d3c0, type: 3}
       propertyPath: _handGrabPoses.Array.data[0]
@@ -16542,11 +16542,11 @@ PrefabInstance:
       objectReference: {fileID: 489957075}
     - target: {fileID: 6812996425253064312, guid: 244373c0583ec814fb00ea6f1633d3c0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.098
+      value: 0.097
       objectReference: {fileID: 0}
     - target: {fileID: 6812996425253064312, guid: 244373c0583ec814fb00ea6f1633d3c0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.147
+      value: 0.152
       objectReference: {fileID: 0}
     - target: {fileID: 6812996425253064312, guid: 244373c0583ec814fb00ea6f1633d3c0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -16582,7 +16582,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7131986669274962573, guid: 244373c0583ec814fb00ea6f1633d3c0, type: 3}
       propertyPath: _resetGrabOnGrabsUpdated
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 244373c0583ec814fb00ea6f1633d3c0, type: 3}
