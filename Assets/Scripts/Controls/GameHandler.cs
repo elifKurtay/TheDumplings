@@ -7,6 +7,9 @@ public class GameHandler : MonoBehaviour
     public AudioClip musicInit;
     public Logger debug;
 
+    public GameObject room2;
+    public GameObject endingScene;
+
     public List<GameObject> interactables;
 
     private int gameLevel;
@@ -29,17 +32,24 @@ public class GameHandler : MonoBehaviour
         for( int i = 2; i < interactables.Count; i++){
             interactables[i].SetActive(false);
         }
+        endingScene.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
         if(updated) {
-            if(gameLevel > 3) {
-                debug.LogInfo("CONGRATSS!!! GAME IS FINISHED!!");
+            if(gameLevel == 4) {
                 updated = false;
                 return;
             }
+            else if (gameLevel > 4) {
+                endingScene.SetActive(true);
+                room2.SetActive(false);
+                updated = false;
+                return;
+            }
+            
 
             interactables[gameLevel-1].SetActive(false);
             interactables[gameLevel+1].SetActive(true);
