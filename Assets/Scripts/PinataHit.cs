@@ -8,7 +8,7 @@ public class PinataHit : MonoBehaviour
     
     private AudioSource audioSource;
     private Rigidbody rb;
-
+    private bool moving=false;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,10 +19,14 @@ public class PinataHit : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(rb.angularVelocity.magnitude > 10) {
+        if(rb.angularVelocity.magnitude > 7 && !moving) {
             spawner.spawn();
-            rb.angularVelocity = Vector3.zero;
+            moving = true;
             audioSource.Play();
+        }
+        if (rb.angularVelocity.magnitude<2.0f)
+        {
+            moving = false;
         }
     }
 }

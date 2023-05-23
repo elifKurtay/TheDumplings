@@ -5,24 +5,27 @@ using UnityEngine;
 public class BasketOnStand : MonoBehaviour
 {
     public CandyCounter counter;
+    private Vector3 centerPosition;
     // Start is called before the first frame update
     void Start()
     {
-        
+        centerPosition = transform.position;
     }
 
     private void OnTriggerEnter(Collider someObject)
     {
         if (someObject.CompareTag("Basket"))
         {
-            someObject.gameObject.transform.position = Vector3.zero;
-            someObject.gameObject.transform.rotation = Quaternion.identity;
+            someObject.gameObject.transform.position = centerPosition;
         }
     }
     private void OnTriggerStay(Collider other)
     {
-        BasketCollisionScript basketContent = other.gameObject.transform.GetComponentInChildren<BasketCollisionScript>();
-        counter.candyCount = basketContent.numberOfCandies;
+        if (other.CompareTag("Basket"))
+        {
+            BasketCollisionScript basketContent = other.gameObject.GetComponentInChildren<BasketCollisionScript>();
+            counter.candyCount = basketContent.numberOfCandies;
+        }
     }
     private void OnTriggerExit(Collider someObject)
     {
