@@ -10,7 +10,7 @@ public class DisableDoor : MonoBehaviour
     public GameObject grabbableHandle;
 
     public GameObject lamb;
-    public Material red;
+    // public Material red;
     public Material green;
 
     public bool isTutorialDoor;
@@ -21,7 +21,7 @@ public class DisableDoor : MonoBehaviour
 
     private Vector3 handleInitPos;
 
-    // private Material red;
+    private Material red;
 
     // whether the door is disabled
     private bool disabled;
@@ -29,23 +29,33 @@ public class DisableDoor : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        disabled = false;
+        disabled = true;
         Transform t = door.GetComponent<Transform>();
         doorRb = door.GetComponent<Rigidbody>();
         doorInitPos = t.position;
         doorInitRot = t.rotation;
         handleInitPos = grabbableHandle.GetComponent<Transform>().position;
 
-        // red = lamb.GetComponent<MeshRenderer>().material;
+        red = lamb.GetComponent<MeshRenderer>().material;
         if(isTutorialDoor) {
             Enable();
+            
+            // DEBUG ONLY
+            // StartCoroutine(waiter());
         }
+    }
+
+    // DEBUG ONLY
+    IEnumerator waiter() {
+        Disable();
+
+        yield return new WaitForSeconds(5);
+
+        Enable();
     }
 
     // when the player enters the trigger
     private void OnTriggerExit(Collider someObject) {
-        // already disabled
-        if (disabled) return;
         if (someObject.gameObject.layer == 8)
         {
             Disable();
@@ -53,6 +63,9 @@ public class DisableDoor : MonoBehaviour
     }
 
     private void Disable() {
+        // already disabled
+        if (disabled) return;
+
         // disable rigidbody
         doorRb.isKinematic = true;
 
@@ -72,13 +85,15 @@ public class DisableDoor : MonoBehaviour
     }
     
     public void Enable() {
+        // already enabled
+        if (!disabled) return;
+
         ResetDoorPosition();
 
-        doorRb.isKinematic = false;
-
-        // disable grabbable handler
+        // enable grabbable handler
         grabbableHandle.SetActive(true);
-        // door.SetActive(false);
+
+        doorRb.isKinematic = false;
 
         // green light on
         lamb.GetComponent<MeshRenderer>().material = green;
