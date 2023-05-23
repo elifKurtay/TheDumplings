@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 6117476414507593383}
   - component: {fileID: 7774282509810954065}
   - component: {fileID: 8687879862515240404}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Double Blue
   m_TagString: Candy
   m_Icon: {fileID: 0}
@@ -208,7 +208,7 @@ GameObject:
   - component: {fileID: 1003396774097713948}
   - component: {fileID: 2227733867589824186}
   - component: {fileID: 3209767905916971377}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HandGrab Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -294,7 +294,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7830759313418355540}
   - component: {fileID: 141759291463550707}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HandGrabInteractable_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}

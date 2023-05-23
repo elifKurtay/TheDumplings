@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 8469376925639364530}
   - component: {fileID: 6732930770899941949}
   - component: {fileID: 4997173595373414564}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Checker Magenta
   m_TagString: Candy
   m_Icon: {fileID: 0}
@@ -208,7 +208,7 @@ GameObject:
   - component: {fileID: 6508642439440502517}
   - component: {fileID: 427758916510580944}
   - component: {fileID: 2032145240915874177}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HandGrab Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -295,7 +295,7 @@ GameObject:
   - component: {fileID: 7630427300003060372}
   - component: {fileID: 787628503874334700}
   - component: {fileID: 1423283389668993256}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HandGrabInteractable_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -385,7 +385,7 @@ GameObject:
   - component: {fileID: 3333878330770244358}
   - component: {fileID: 7675734285850585698}
   - component: {fileID: 5090433974148913051}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HandGrab Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -472,7 +472,7 @@ GameObject:
   - component: {fileID: 697704957851776343}
   - component: {fileID: 3907181066692240012}
   - component: {fileID: 6735099565662967210}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HandGrab Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}

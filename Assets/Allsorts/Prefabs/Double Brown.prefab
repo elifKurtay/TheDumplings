@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 9500000}
   - component: {fileID: 5400000}
   - component: {fileID: -8299671682871880117}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Double Brown
   m_TagString: Candy
   m_Icon: {fileID: 0}

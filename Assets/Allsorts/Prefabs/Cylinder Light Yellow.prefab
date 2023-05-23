@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
   - component: {fileID: 6400000}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: YellowRound_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 400002}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Correction
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,7 +142,7 @@ GameObject:
   - component: {fileID: 4011449744142371867}
   - component: {fileID: 5808039958580732626}
   - component: {fileID: 4979840638948613202}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Cylinder Light Yellow
   m_TagString: Candy
   m_Icon: {fileID: 0}
@@ -285,7 +285,7 @@ GameObject:
   - component: {fileID: 2384675902403657332}
   - component: {fileID: 4025255960418551066}
   - component: {fileID: 4876505048102310430}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HandGrab Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -371,7 +371,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2298513541699925816}
   - component: {fileID: 6038538844107112283}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HandGrabInteractable_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}

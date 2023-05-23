@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 9500000}
   - component: {fileID: 5400000}
   - component: {fileID: 4152780034382151049}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Single Pink
   m_TagString: Candy
   m_Icon: {fileID: 0}
