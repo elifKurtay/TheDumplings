@@ -10,6 +10,7 @@ public class DisableDoor : MonoBehaviour
     public GameObject grabbableHandle;
 
     public GameObject lamb;
+    public Material red;
     public Material green;
 
     public bool isTutorialDoor;
@@ -20,7 +21,7 @@ public class DisableDoor : MonoBehaviour
 
     private Vector3 handleInitPos;
 
-    private Material red;
+    // private Material red;
 
     // whether the door is disabled
     private bool disabled;
@@ -35,7 +36,7 @@ public class DisableDoor : MonoBehaviour
         doorInitRot = t.rotation;
         handleInitPos = grabbableHandle.GetComponent<Transform>().position;
 
-        red = lamb.GetComponent<MeshRenderer>().material;
+        // red = lamb.GetComponent<MeshRenderer>().material;
         if(isTutorialDoor) {
             Enable();
         }
