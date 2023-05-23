@@ -5,18 +5,21 @@ using UnityEngine;
 // Reset door position and disables it when the player enters the trigger
 public class DisableDoor : MonoBehaviour
 {
-    public GameObject door;
-    public GameObject handler;
     public GameHandler gameHandler;
+    public GameObject door;
+    public GameObject grabbableHandle;
 
     public GameObject lamb;
     public Material green;
 
     public bool isTutorialDoor;
 
-    private Vector3 initialPosition;
-    private Quaternion initialRotation;
-    private Rigidbody rb;
+    private Vector3 doorInitPos;
+    private Quaternion doorInitRot;
+    private Rigidbody doorRb;
+
+    private Vector3 handleInitPos;
+
     private Material red;
 
     // whether the door is disabled
@@ -27,9 +30,10 @@ public class DisableDoor : MonoBehaviour
     {
         disabled = false;
         Transform t = door.GetComponent<Transform>();
-        rb = door.GetComponent<Rigidbody>();
-        initialPosition = t.position;
-        initialRotation = t.rotation;
+        doorRb = door.GetComponent<Rigidbody>();
+        doorInitPos = t.position;
+        doorInitRot = t.rotation;
+        handleInitPos = grabbableHandle.GetComponent<Transform>().position;
 
         red = lamb.GetComponent<MeshRenderer>().material;
         if(isTutorialDoor) {
@@ -48,15 +52,13 @@ public class DisableDoor : MonoBehaviour
     }
 
     private void Disable() {
-        disabled = true;
-        
         // disable rigidbody
-        rb.isKinematic = true;
+        doorRb.isKinematic = true;
 
-        door.transform.position = initialPosition;
-        door.transform.rotation = initialRotation;
+        ResetDoorPosition();
+
         // disable grabbable handler
-        handler.SetActive(false);
+        grabbableHandle.SetActive(false);
         
         // door.SetActive(true);
 
@@ -65,24 +67,33 @@ public class DisableDoor : MonoBehaviour
         if(gameHandler != null) {
             gameHandler.NextLevel();
         }
+        disabled = true;
     }
     
     public void Enable() {
-        disabled = false;
-        
-        rb.isKinematic = false;
-        rb.velocity = Vector3.zero;
-        rb.angularVelocity = Vector3.zero;
+        ResetDoorPosition();
 
-        door.transform.position = initialPosition;
-        door.transform.rotation = initialRotation;
+        doorRb.isKinematic = false;
 
         // disable grabbable handler
-        handler.SetActive(true);
+        grabbableHandle.SetActive(true);
         // door.SetActive(false);
 
         // green light on
         lamb.GetComponent<MeshRenderer>().material = green;
+
+        disabled = false;
+    }
+
+    // reset position, rotation and velocity of movable components of the door
+    private void ResetDoorPosition() {
+        doorRb.velocity = Vector3.zero;
+        doorRb.angularVelocity = Vector3.zero;
+
+        door.transform.position = doorInitPos;
+        door.transform.rotation = doorInitRot;
+
+        grabbableHandle.transform.position = handleInitPos;
     }
 
 }
