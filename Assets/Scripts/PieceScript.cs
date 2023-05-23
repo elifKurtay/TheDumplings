@@ -20,6 +20,7 @@ public class PieceScript : MonoBehaviour
         rightPosition = transform.position;
         rightRotation = transform.rotation;
         transform.localPosition = transform.localPosition + new Vector3(Random.Range(-25.0f,25.0f), Random.Range(0.3f, 0.5f),Random.Range(10.0f, 40.0f));
+        transform.Rotate(Vector3.up, 180f);
         //print(transform.position);
         rigidBody = GetComponent<Rigidbody>();
         audioData = GetComponent<AudioSource>();
@@ -41,7 +42,8 @@ public class PieceScript : MonoBehaviour
             return;
         }
 
-        if(Vector3.Distance(transform.position,rightPosition) < 0.05f)
+        if(Vector3.Distance(transform.position,rightPosition) < 0.05f && 
+            Vector3.Distance(transform.rotation.eulerAngles, rightRotation.eulerAngles) < 35f)
         {
             transform.position = rightPosition;
             transform.rotation = rightRotation;

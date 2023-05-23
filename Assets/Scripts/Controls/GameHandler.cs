@@ -5,7 +5,6 @@ using UnityEngine;
 public class GameHandler : MonoBehaviour
 {
     public AudioClip musicInit;
-    public Logger debug;
 
     public GameObject room2;
     public GameObject endingScene;
@@ -39,17 +38,18 @@ public class GameHandler : MonoBehaviour
     void Update()
     {
         if(updated) {
-            if(gameLevel == 3) {
+            if(gameLevel == 4) {
+                interactables[gameLevel-1].SetActive(false);
                 updated = false;
                 return;
             }
-            else if (gameLevel > 3) {
+            else if (gameLevel == 5) {
+                interactables[gameLevel-1].SetActive(false);
                 endingScene.SetActive(true);
                 room2.SetActive(false);
                 updated = false;
                 return;
             }
-            
 
             interactables[gameLevel-1].SetActive(false);
             interactables[gameLevel+1].SetActive(true);
@@ -59,7 +59,6 @@ public class GameHandler : MonoBehaviour
 
     public void NextLevel() {
         gameLevel++;
-        debug.LogInfo("Level increased to: " + gameLevel.ToString());
         updated = true;
     }
 }
