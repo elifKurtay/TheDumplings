@@ -82,9 +82,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _data:
     startPoint: {x: 0, y: 0.0026399456, z: 0}
-    endPoint: {x: 0, y: 0.0002505742, z: 0}
+    endPoint: {x: -0.00803815, y: 0.22822861, z: -0.000000033113693}
     arcOffset: 0
-    arcLength: 98.05295
+    arcLength: 360
   _relativeTo: {fileID: 3988595736802691438}
   _referencePoint: {fileID: 2110610059781008425}
 --- !u!1 &1232797238823432432
@@ -104,7 +104,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2259413074725085286
 Transform:
   m_ObjectHideFlags: 0
@@ -185,7 +185,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4120272521623456084
 Transform:
   m_ObjectHideFlags: 0
@@ -299,9 +299,9 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 0}
-  _rigidbody: {fileID: 0}
-  _physicsGrabbable: {fileID: 0}
+  _pointableElement: {fileID: 7273796112549415793}
+  _rigidbody: {fileID: 3011299909810043685}
+  _physicsGrabbable: {fileID: 9171013454462473483}
   _resetGrabOnGrabsUpdated: 1
   _scoringModifier:
     _positionRotationWeight: 0.8
@@ -335,7 +335,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3988595736802691438}
-  - component: {fileID: 1990044701895758082}
   - component: {fileID: 3011299909810043685}
   - component: {fileID: 7273796112549415793}
   - component: {fileID: 9171013454462473483}
@@ -368,33 +367,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
---- !u!205 &1990044701895758082
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2657793467864044167}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: -0.00000003259629, y: 0.4, z: 0.00029998645}
-  m_Size: 0.8
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.6
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 6519858332921555189}
-  - screenRelativeHeight: 0.3
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 6540569924065661215}
-  - screenRelativeHeight: 0.1
-    fadeTransitionWidth: 0
-    renderers:
-    - renderer: {fileID: 8462295459274590961}
-  m_Enabled: 1
 --- !u!54 &3011299909810043685
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -571,12 +543,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    startPoint: {x: 0, y: 0.0026399456, z: 0}
-    endPoint: {x: 0, y: 0.0002505742, z: 0}
+    startPoint: {x: 0.00000026490954, y: 0.09920704, z: -0.00049909786}
+    endPoint: {x: 0.00000026490954, y: 0.26430136, z: -0.0024115047}
     arcOffset: 0
-    arcLength: 98.05295
+    arcLength: 360
   _relativeTo: {fileID: 3988595736802691438}
-  _referencePoint: {fileID: 720812888774359294}
+  _referencePoint: {fileID: 2969174869325095545}
 --- !u!1 &3616164619960440258
 GameObject:
   m_ObjectHideFlags: 0
@@ -708,9 +680,9 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 0}
-  _rigidbody: {fileID: 0}
-  _physicsGrabbable: {fileID: 0}
+  _pointableElement: {fileID: 7273796112549415793}
+  _rigidbody: {fileID: 3011299909810043685}
+  _physicsGrabbable: {fileID: 9171013454462473483}
   _resetGrabOnGrabsUpdated: 0
   _scoringModifier:
     _positionRotationWeight: 0.8
@@ -816,12 +788,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    startPoint: {x: 0, y: 0.0026399456, z: 0}
-    endPoint: {x: 0, y: 0.0002505742, z: 0}
+    startPoint: {x: 0.00000026490954, y: 0.11882096, z: 0.007438445}
+    endPoint: {x: 0.00000026490954, y: 0.31344843, z: 0.01030157}
     arcOffset: 0
     arcLength: 98.05295
   _relativeTo: {fileID: 3988595736802691438}
-  _referencePoint: {fileID: 5424746858793315275}
+  _referencePoint: {fileID: 2969174869325095545}
 --- !u!1 &6181126735219044251
 GameObject:
   m_ObjectHideFlags: 0
@@ -904,11 +876,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _data:
     startPoint: {x: 0, y: 0.0026399456, z: 0}
-    endPoint: {x: 0, y: 0.0002505742, z: 0}
+    endPoint: {x: 0.00000026490954, y: 0.20623845, z: -0.0017696786}
     arcOffset: 0
-    arcLength: 98.05295
+    arcLength: 360
   _relativeTo: {fileID: 3988595736802691438}
-  _referencePoint: {fileID: 9071385447736049429}
+  _referencePoint: {fileID: 2110610059781008425}
 --- !u!1 &7803306973664430582
 GameObject:
   m_ObjectHideFlags: 0
@@ -991,11 +963,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _data:
     startPoint: {x: 0, y: 0.0026399456, z: 0}
-    endPoint: {x: 0, y: 0.0002505742, z: 0}
+    endPoint: {x: -0.0030027498, y: 0.20129418, z: -0.000000016556847}
     arcOffset: 0
-    arcLength: 98.05295
+    arcLength: 360
   _relativeTo: {fileID: 3988595736802691438}
-  _referencePoint: {fileID: 4393797655438022177}
+  _referencePoint: {fileID: 2110610059781008425}
 --- !u!1 &9144607334573034329
 GameObject:
   m_ObjectHideFlags: 0
@@ -1077,9 +1049,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _data:
-    startPoint: {x: 0, y: 0.0026399456, z: 0}
-    endPoint: {x: 0, y: 0.0002505742, z: 0}
+    startPoint: {x: 0.00000026490954, y: 0.11278419, z: 0.012861342}
+    endPoint: {x: 0.00000026490954, y: 0.27486223, z: 0.0088685425}
     arcOffset: 0
     arcLength: 98.05295
   _relativeTo: {fileID: 3988595736802691438}
-  _referencePoint: {fileID: 7674566708204325939}
+  _referencePoint: {fileID: 2969174869325095545}

@@ -399,7 +399,7 @@ public class PlayerControllerWithHandPoses : MonoBehaviour
 			if (moveForward)
 				MoveThrottle += ort * (transform.lossyScale.z * moveInfluence * (Vector3.forward + Vector3.right));
 			if (moveBack)
-				MoveThrottle += ort * (transform.lossyScale.z * moveInfluence * BackAndSideDampen * Vector3.back);
+				MoveThrottle += ort * (transform.lossyScale.z * moveInfluence * BackAndSideDampen * (Vector3.back + Vector3.left));
 			
 			if (moveLeft)
 				MoveThrottle += ort * (transform.lossyScale.x * moveInfluence * BackAndSideDampen * Vector3.left);

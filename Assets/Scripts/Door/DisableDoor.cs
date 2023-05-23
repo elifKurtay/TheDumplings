@@ -33,7 +33,7 @@ public class DisableDoor : MonoBehaviour
 
         red = lamb.GetComponent<MeshRenderer>().material;
         if(isTutorialDoor) {
-            lamb.GetComponent<MeshRenderer>().material = green;
+            Enable();
         }
     }
 
@@ -48,6 +48,8 @@ public class DisableDoor : MonoBehaviour
     }
 
     private void Disable() {
+        disabled = true;
+        /*
         // disable rigidbody
         rb.isKinematic = true;
 
@@ -55,7 +57,8 @@ public class DisableDoor : MonoBehaviour
         door.transform.rotation = initialRotation;
         // disable grabbable handler
         handler.SetActive(false);
-        disabled = true;
+        */
+        door.SetActive(true);
 
         //red light on
         lamb.GetComponent<MeshRenderer>().material = red;
@@ -65,6 +68,8 @@ public class DisableDoor : MonoBehaviour
     }
     
     public void Enable() {
+        disabled = false;
+        /*
         rb.isKinematic = false;
         rb.velocity = Vector3.zero;
         rb.angularVelocity = Vector3.zero;
@@ -74,7 +79,8 @@ public class DisableDoor : MonoBehaviour
 
         // disable grabbable handler
         handler.SetActive(true);
-        disabled = false;
+        */
+        door.SetActive(false);
 
         // green light on
         lamb.GetComponent<MeshRenderer>().material = green;

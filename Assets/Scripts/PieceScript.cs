@@ -19,7 +19,7 @@ public class PieceScript : MonoBehaviour
     {
         rightPosition = transform.position;
         rightRotation = transform.rotation;
-        transform.position = rightPosition + new Vector3(Random.Range(-1.5f,0f), 0.05f, Random.Range(-1.5f, 1.5f));
+        transform.localPosition = transform.localPosition + new Vector3(Random.Range(-25.0f,25.0f), Random.Range(0.3f, 0.5f),Random.Range(10.0f, 40.0f));
         //print(transform.position);
         rigidBody = GetComponent<Rigidbody>();
         audioData = GetComponent<AudioSource>();
@@ -30,7 +30,8 @@ public class PieceScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(foundRightPosition && transform.hasChanged)
+        
+        if (foundRightPosition && transform.hasChanged)
         {
             transform.position = rightPosition;
             transform.rotation = rightRotation;
@@ -51,8 +52,8 @@ public class PieceScript : MonoBehaviour
             physGab.enabled = false;
             rigidBody.isKinematic = true;
             audioData.Play();
-            Transform childToRemove = this.transform.Find("HandGrabInteractable");
-            childToRemove.parent = null;
+            //Transform childToRemove = this.transform.Find("HandGrabInteractable");
+            //childToRemove.parent = null;
             //GameObject childToRemove = this.transform.GetChild(1).gameObject;
             //childToRemove.SetActive(false);
             //rigidBody.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationZ;
