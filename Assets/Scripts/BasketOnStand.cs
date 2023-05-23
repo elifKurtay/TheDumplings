@@ -15,22 +15,20 @@ public class BasketOnStand : MonoBehaviour
     {
         if (someObject.CompareTag("Basket"))
         {
-            BasketCollisionScript basketContent = someObject.gameObject.transform.GetComponentInChildren<BasketCollisionScript>();
-            counter.candyCount = basketContent.numberOfCandies;
-            someObject.gameObject.transform.localPosition = Vector3.zero;
-            someObject.gameObject.transform.localRotation = Quaternion.identity;
-            Rigidbody body = someObject.gameObject.transform.GetComponent<Rigidbody>();
-            body.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ;
+            someObject.gameObject.transform.position = Vector3.zero;
+            someObject.gameObject.transform.rotation = Quaternion.identity;
         }
     }
-
+    private void OnTriggerStay(Collider other)
+    {
+        BasketCollisionScript basketContent = other.gameObject.transform.GetComponentInChildren<BasketCollisionScript>();
+        counter.candyCount = basketContent.numberOfCandies;
+    }
     private void OnTriggerExit(Collider someObject)
     {
         if (someObject.CompareTag("Basket"))
         {
             counter.candyCount = 0;
-            Rigidbody body = someObject.gameObject.transform.GetComponent<Rigidbody>();
-            body.constraints = RigidbodyConstraints.None;
         }
     }
 }

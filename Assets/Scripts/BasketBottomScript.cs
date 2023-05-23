@@ -10,7 +10,8 @@ public class BasketBottomScript : MonoBehaviour
         if (someObject.CompareTag("Candy"))
         {
             Rigidbody body = someObject.gameObject.transform.GetComponent<Rigidbody>();
-            body.constraints = RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ;
+            body.constraints = (RigidbodyConstraints.FreezePositionX | RigidbodyConstraints.FreezePositionY | RigidbodyConstraints.FreezePositionZ |
+                RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ);
         }
     }
 

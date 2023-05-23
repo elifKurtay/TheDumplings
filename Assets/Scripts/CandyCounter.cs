@@ -24,7 +24,7 @@ public class CandyCounter : MonoBehaviour
     void Update()
     {
         textArea.text = candyCount.ToString();
-        if(candyCount == goalCount) {
+        if(candyCount >= goalCount) {
             doorToEnable.Enable();
         }
     }

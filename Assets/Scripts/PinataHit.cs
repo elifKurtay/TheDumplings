@@ -22,7 +22,7 @@ public class PinataHit : MonoBehaviour
         if(rb.angularVelocity.magnitude > 10) {
             spawner.spawn();
             rb.angularVelocity = Vector3.zero;
-            audioSource.PlayOneShot(audioSource.clip);
+            audioSource.Play();
         }
     }
 }
