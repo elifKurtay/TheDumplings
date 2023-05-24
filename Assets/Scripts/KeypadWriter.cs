@@ -5,8 +5,8 @@ using TMPro;
 
 public class KeypadWriter : MonoBehaviour
 {
-    [SerializeField] public Logger debug;
-    public DisableDoor doorToEnable;
+    public GameHandler gameHandler;
+    private AudioSource audio;
 
     private TextMeshPro textArea;
     private int maxLen = 6;
@@ -16,6 +16,7 @@ public class KeypadWriter : MonoBehaviour
     void Start()
     {
         textArea = GetComponent<TextMeshPro>();
+        audio = GetComponent<AudioSource>();
         textArea.enabled = true;
         textArea.text = string.Empty;
     }
@@ -41,16 +42,11 @@ public class KeypadWriter : MonoBehaviour
     {
         if (textArea.text == password)
         {
-            if(debug != null) {
-                debug.LogInfo("Success!!!");
-            }
-            doorToEnable.Enable();
+            gameHandler.NextLevel();
         }
         else
         {
-            if(debug != null) {
-                debug.LogInfo("FAIL!!!");
-            }
+            audio.Play();
         }
     }
 }

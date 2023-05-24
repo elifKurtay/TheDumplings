@@ -270,7 +270,7 @@ MonoBehaviour:
   _movementProvider: {fileID: 0}
   _handAligment: 1
   _handGrabPoses:
-  - {fileID: 0}
+  - {fileID: 4746089270342720271}
 --- !u!1 &1797966141302412666
 GameObject:
   m_ObjectHideFlags: 0
