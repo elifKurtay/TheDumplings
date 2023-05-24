@@ -23,7 +23,7 @@ public class CandyCounter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        textArea.text = candyCount.ToString();
+        textArea.text = candyCount.ToString() + "/10";
         if(candyCount >= goalCount) {
             doorToEnable.Enable();
         }

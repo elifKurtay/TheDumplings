@@ -6,10 +6,12 @@ public class BasketOnStand : MonoBehaviour
 {
     public CandyCounter counter;
     private Vector3 centerPosition;
+    private Quaternion centerRotation;
     // Start is called before the first frame update
     void Start()
     {
         centerPosition = transform.position;
+        centerRotation = transform.rotation;
     }
 
     private void OnTriggerEnter(Collider someObject)
@@ -17,6 +19,8 @@ public class BasketOnStand : MonoBehaviour
         if (someObject.CompareTag("Basket"))
         {
             someObject.gameObject.transform.position = centerPosition;
+            someObject.gameObject.transform.rotation = centerRotation;
+       
         }
     }
     private void OnTriggerStay(Collider other)
