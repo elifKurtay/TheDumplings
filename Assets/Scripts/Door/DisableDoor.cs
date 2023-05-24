@@ -18,6 +18,7 @@ public class DisableDoor : MonoBehaviour
     private Vector3 doorInitPos;
     private Quaternion doorInitRot;
     private Rigidbody doorRb;
+    private AudioSource audio;
 
     private Vector3 handleInitPos;
 
@@ -38,6 +39,8 @@ public class DisableDoor : MonoBehaviour
 
         red = lamb.GetComponent<MeshRenderer>().material;
         trigger = this.GetComponent<BoxCollider>();
+
+        audio = GetComponent<AudioSource>();
 
         // disable door by default
         // Disable();
@@ -91,6 +94,7 @@ public class DisableDoor : MonoBehaviour
         trigger.enabled = false;
        
         disabled = true;
+        audio.Play();
     }
     
     public void Enable() {
