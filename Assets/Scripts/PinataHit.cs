@@ -19,12 +19,12 @@ public class PinataHit : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(rb.velocity.magnitude > 7 && !moving) {
+        if(rb.velocity.magnitude > .65f && !moving) {
             spawner.spawn();
             moving = true;
             audioSource.Play();
         }
-        if (rb.velocity.magnitude<3.0f)
+        if (rb.velocity.magnitude< .3f)
         {
             moving = false;
         }

@@ -4803,6 +4803,26 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.393
       objectReference: {fileID: 0}
+    - target: {fileID: 4919022601422791763, guid: d93b7e04b48cd7b4fa849695dba2ce9c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919022601422791763, guid: d93b7e04b48cd7b4fa849695dba2ce9c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919022601422791763, guid: d93b7e04b48cd7b4fa849695dba2ce9c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919022601422791763, guid: d93b7e04b48cd7b4fa849695dba2ce9c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919022601422791763, guid: d93b7e04b48cd7b4fa849695dba2ce9c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -90
+      objectReference: {fileID: 0}
     - target: {fileID: 4919022601423383439, guid: d93b7e04b48cd7b4fa849695dba2ce9c, type: 3}
       propertyPath: m_ClearFlags
       value: 2
@@ -10169,6 +10189,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1386084102002511536, guid: 244373c0583ec814fb00ea6f1633d3c0, type: 3}
+      propertyPath: _handPose._fingersFreedom.Array.data[4]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1386084102002511536, guid: 244373c0583ec814fb00ea6f1633d3c0, type: 3}
       propertyPath: _handPose._jointRotations.Array.data[3].w
       value: -0.940284
       objectReference: {fileID: 0}
@@ -10249,6 +10273,22 @@ PrefabInstance:
       value: 0.111382246
       objectReference: {fileID: 0}
     - target: {fileID: 1386084102002511536, guid: 244373c0583ec814fb00ea6f1633d3c0, type: 3}
+      propertyPath: _handPose._jointRotations.Array.data[10].w
+      value: 0.9858754
+      objectReference: {fileID: 0}
+    - target: {fileID: 1386084102002511536, guid: 244373c0583ec814fb00ea6f1633d3c0, type: 3}
+      propertyPath: _handPose._jointRotations.Array.data[10].x
+      value: -0.05938339
+      objectReference: {fileID: 0}
+    - target: {fileID: 1386084102002511536, guid: 244373c0583ec814fb00ea6f1633d3c0, type: 3}
+      propertyPath: _handPose._jointRotations.Array.data[10].y
+      value: 0.120224774
+      objectReference: {fileID: 0}
+    - target: {fileID: 1386084102002511536, guid: 244373c0583ec814fb00ea6f1633d3c0, type: 3}
+      propertyPath: _handPose._jointRotations.Array.data[10].z
+      value: -0.100345604
+      objectReference: {fileID: 0}
+    - target: {fileID: 1386084102002511536, guid: 244373c0583ec814fb00ea6f1633d3c0, type: 3}
       propertyPath: _handPose._jointRotations.Array.data[11].w
       value: 0.9990413
       objectReference: {fileID: 0}
@@ -10280,6 +10320,22 @@ PrefabInstance:
       propertyPath: _handPose._jointRotations.Array.data[12].z
       value: -0.27956864
       objectReference: {fileID: 0}
+    - target: {fileID: 1386084102002511536, guid: 244373c0583ec814fb00ea6f1633d3c0, type: 3}
+      propertyPath: _handPose._jointRotations.Array.data[14].w
+      value: 0.99507034
+      objectReference: {fileID: 0}
+    - target: {fileID: 1386084102002511536, guid: 244373c0583ec814fb00ea6f1633d3c0, type: 3}
+      propertyPath: _handPose._jointRotations.Array.data[14].x
+      value: 0.091151915
+      objectReference: {fileID: 0}
+    - target: {fileID: 1386084102002511536, guid: 244373c0583ec814fb00ea6f1633d3c0, type: 3}
+      propertyPath: _handPose._jointRotations.Array.data[14].y
+      value: -0.0030806356
+      objectReference: {fileID: 0}
+    - target: {fileID: 1386084102002511536, guid: 244373c0583ec814fb00ea6f1633d3c0, type: 3}
+      propertyPath: _handPose._jointRotations.Array.data[14].z
+      value: -0.038947787
+      objectReference: {fileID: 0}
     - target: {fileID: 2966540770245401231, guid: 244373c0583ec814fb00ea6f1633d3c0, type: 3}
       propertyPath: _surface
       value: 
@@ -10290,6 +10346,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2966540770245401231, guid: 244373c0583ec814fb00ea6f1633d3c0, type: 3}
       propertyPath: _usesHandPose
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2966540770245401231, guid: 244373c0583ec814fb00ea6f1633d3c0, type: 3}
+      propertyPath: _handPose._fingersFreedom.Array.data[4]
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2966540770245401231, guid: 244373c0583ec814fb00ea6f1633d3c0, type: 3}
@@ -10387,6 +10447,38 @@ PrefabInstance:
     - target: {fileID: 2966540770245401231, guid: 244373c0583ec814fb00ea6f1633d3c0, type: 3}
       propertyPath: _handPose._jointRotations.Array.data[12].z
       value: -0.060943842
+      objectReference: {fileID: 0}
+    - target: {fileID: 2966540770245401231, guid: 244373c0583ec814fb00ea6f1633d3c0, type: 3}
+      propertyPath: _handPose._jointRotations.Array.data[14].w
+      value: 0.995033
+      objectReference: {fileID: 0}
+    - target: {fileID: 2966540770245401231, guid: 244373c0583ec814fb00ea6f1633d3c0, type: 3}
+      propertyPath: _handPose._jointRotations.Array.data[14].x
+      value: 0.090393014
+      objectReference: {fileID: 0}
+    - target: {fileID: 2966540770245401231, guid: 244373c0583ec814fb00ea6f1633d3c0, type: 3}
+      propertyPath: _handPose._jointRotations.Array.data[14].y
+      value: -0.028573532
+      objectReference: {fileID: 0}
+    - target: {fileID: 2966540770245401231, guid: 244373c0583ec814fb00ea6f1633d3c0, type: 3}
+      propertyPath: _handPose._jointRotations.Array.data[14].z
+      value: -0.03036361
+      objectReference: {fileID: 0}
+    - target: {fileID: 2966540770245401231, guid: 244373c0583ec814fb00ea6f1633d3c0, type: 3}
+      propertyPath: _handPose._jointRotations.Array.data[15].w
+      value: -0.9918624
+      objectReference: {fileID: 0}
+    - target: {fileID: 2966540770245401231, guid: 244373c0583ec814fb00ea6f1633d3c0, type: 3}
+      propertyPath: _handPose._jointRotations.Array.data[15].x
+      value: 0.042772412
+      objectReference: {fileID: 0}
+    - target: {fileID: 2966540770245401231, guid: 244373c0583ec814fb00ea6f1633d3c0, type: 3}
+      propertyPath: _handPose._jointRotations.Array.data[15].y
+      value: -0.03780429
+      objectReference: {fileID: 0}
+    - target: {fileID: 2966540770245401231, guid: 244373c0583ec814fb00ea6f1633d3c0, type: 3}
+      propertyPath: _handPose._jointRotations.Array.data[15].z
+      value: 0.11379921
       objectReference: {fileID: 0}
     - target: {fileID: 3662471582866371200, guid: 244373c0583ec814fb00ea6f1633d3c0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -12950,7 +13042,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 0.9839151, b: 0.8537736, a: 1}
+  m_Color: {r: 0.9716981, g: 0.92660654, b: 0.55460125, a: 1}
   m_Intensity: 3
   m_Range: 10
   m_SpotAngle: 30
@@ -17169,7 +17261,7 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 0.9806017, b: 0.8160377, a: 1}
+  m_Color: {r: 0.9339623, g: 0.8988122, b: 0.6035511, a: 1}
   m_Intensity: 3
   m_Range: 20
   m_SpotAngle: 30
