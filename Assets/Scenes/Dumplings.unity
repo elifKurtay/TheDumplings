@@ -10335,18 +10335,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1834561471}
     m_Modifications:
-    - target: {fileID: 5244545911821550942, guid: ed0fa75ecdd4346d2a77d87a1d8a6d9b, type: 3}
-      propertyPath: m_ConnectedAnchor.x
-      value: 16.36
-      objectReference: {fileID: 0}
-    - target: {fileID: 5244545911821550942, guid: ed0fa75ecdd4346d2a77d87a1d8a6d9b, type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: 1.0089998
-      objectReference: {fileID: 0}
-    - target: {fileID: 5244545911821550942, guid: ed0fa75ecdd4346d2a77d87a1d8a6d9b, type: 3}
-      propertyPath: m_ConnectedAnchor.z
-      value: -11.190337
-      objectReference: {fileID: 0}
     - target: {fileID: 5244545912175788620, guid: ed0fa75ecdd4346d2a77d87a1d8a6d9b, type: 3}
       propertyPath: m_Name
       value: Door
@@ -10395,6 +10383,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5597212320460342444, guid: ed0fa75ecdd4346d2a77d87a1d8a6d9b, type: 3}
+      propertyPath: gameHandler
+      value: 
+      objectReference: {fileID: 530740236}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed0fa75ecdd4346d2a77d87a1d8a6d9b, type: 3}
 --- !u!1001 &1029165080
@@ -14439,6 +14431,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5597212320460342444, guid: ed0fa75ecdd4346d2a77d87a1d8a6d9b, type: 3}
+      propertyPath: gameHandler
+      value: 
+      objectReference: {fileID: 530740236}
     - target: {fileID: 5597212320460342444, guid: ed0fa75ecdd4346d2a77d87a1d8a6d9b, type: 3}
       propertyPath: isTutorialDoor
       value: 0
