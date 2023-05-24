@@ -58,6 +58,9 @@ public class GameHandler : MonoBehaviour
     }
 
     public void NextLevel() {
+        if(gameLevel == 5) {
+            return;
+        }
         gameLevel++;
         updated = true;
     }
