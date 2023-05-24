@@ -10508,18 +10508,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1834561471}
     m_Modifications:
-    - target: {fileID: 5244545911821550942, guid: ed0fa75ecdd4346d2a77d87a1d8a6d9b, type: 3}
-      propertyPath: m_ConnectedAnchor.x
-      value: 16.36
-      objectReference: {fileID: 0}
-    - target: {fileID: 5244545911821550942, guid: ed0fa75ecdd4346d2a77d87a1d8a6d9b, type: 3}
-      propertyPath: m_ConnectedAnchor.y
-      value: 1.0089998
-      objectReference: {fileID: 0}
-    - target: {fileID: 5244545911821550942, guid: ed0fa75ecdd4346d2a77d87a1d8a6d9b, type: 3}
-      propertyPath: m_ConnectedAnchor.z
-      value: -11.190337
-      objectReference: {fileID: 0}
     - target: {fileID: 5244545912175788620, guid: ed0fa75ecdd4346d2a77d87a1d8a6d9b, type: 3}
       propertyPath: m_Name
       value: Door

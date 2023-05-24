@@ -22,6 +22,7 @@ public class DisableDoor : MonoBehaviour
     private Vector3 handleInitPos;
 
     private Material red;
+    private BoxCollider trigger;
 
     // whether the door is disabled
     private bool disabled = true;
@@ -36,6 +37,7 @@ public class DisableDoor : MonoBehaviour
         handleInitPos = grabbableHandle.GetComponent<Transform>().position;
 
         red = lamb.GetComponent<MeshRenderer>().material;
+        trigger = this.GetComponent<BoxCollider>();
 
         // disable door by default
         // Disable();
@@ -84,6 +86,9 @@ public class DisableDoor : MonoBehaviour
         
         //red light on
         lamb.GetComponent<MeshRenderer>().material = red;
+
+        // disable trigger
+        trigger.enabled = false;
        
         disabled = true;
     }
@@ -96,6 +101,9 @@ public class DisableDoor : MonoBehaviour
 
         // enable grabbable handler
         grabbableHandle.SetActive(true);
+        
+        // enable trigger
+        trigger.enabled = true;
 
         doorRb.isKinematic = false;
 
